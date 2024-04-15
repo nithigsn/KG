@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: thistle;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .board {
+            width: 500px;
+            height: 500px;
+            background-color: black;
+            border-radius: 5px;
+            color: white;
+            display: grid;
+            /* grid won't have use here. as you have to specify border */
+            /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 5px; */
+        }
+
+        .box {
+            border-radius: 5px;
+            background-color: gray;
+        }
+
+        .inner-row {
+            padding: 10px;
+        }
+
+        /* outer column border */
+
+        /* outer row border */
+
+        /* inner column border */
+
+        /* inner row border */
+
+        /* background color */
+        .row {
+            background-color:white;
+        }
+
+        .bg-clr {
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+        }
+
+
+
+        .row,
+        .inner-row {
+            display: flex;
+
+        }
+
+        .col {
+            border: 5px solid black;
+            border-right: none;
+
+
+
+        }
+        .row{
+            border: 5px solid black;
+            border-top:0 ;
+            border-left: 0;
+            border-right: 0;
+            
+        }
+
+        .inner-row {
+            border: 1px solid black;
+            
+
+
+
+        }
+
+        .col:nth-last-child(1){
+            border: 5px solid black;
+        }
+       .row:nth-last-child(1){
+        border-bottom: 0;
+       }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col">
+            <div class="row">
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+            </div>
+            <div class="row bg-clr">
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row bg-clr">
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+            </div>
+            <div class="row bg-clr">
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col ">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+            </div>
+            <div class="row  bg-clr">
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+                <div class="inner-col">
+                    <div class="inner-row">01</div>
+                    <div class="inner-row">02</div>
+                    <div class="inner-row">03</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

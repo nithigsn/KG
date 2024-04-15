@@ -1,0 +1,2 @@
+Display Flex:
+- the term flex originated from flexible

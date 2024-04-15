@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            font-family: monospace;
+            font-size: xx-large;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: black;
+            color: white;
+        }
+
+        header,
+        footer,
+        section {
+            flex-grow: 1;
+            background-color: white;
+            color: black;
+            text-align: center;
+            align-content: center;
+        }
+
+        section {
+            flex-grow: 10;
+            background-color: inherit;
+            color: white;
+        }
+
+        /* your answer here. */
+        a{
+            background-color: skyblue;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 15px;
+            border-radius: 10px;
+            padding-right: 40px;
+            padding-left: 40px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            This is header
+        </header>
+        <section>
+            <h1>Tom Cruise</h1>
+            <p>Tom Cruise is an American actor and producer. He is one of the highest-paid actors in the world and has
+                won several awards throughout his career. Cruise is best known for his roles in films such as Top Gun,
+                Mission: Impossible series, Jerry Maguire, and many others.</p>
+            <p>He was born on July 3, 1962, in Syracuse, New York, USA. Cruise started his career at a young age and
+                rose to prominence in the 1980s.</p>
+            <p>For more information, you can visit <a href="https://en.wikipedia.org/wiki/Tom_Cruise">Tom Cruise's
+                    Wikipedia page</a>.</p>
+        </section>
+        <footer>
+            This is footer
+        </footer>
+    </div>
+</body>
+
+</html>

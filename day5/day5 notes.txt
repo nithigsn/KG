@@ -1,0 +1,15 @@
+Day 5 05/04/2024
+
+
+Major Pesudo Classes
+hover: -----> on cursor over an element
+active:-----> on mouse click over an element
+focus:-----> will display current place 
+(note-may not work because of a order--- order---> :hover---->:focus---->:active)
+:nth
+- tag:nth-child(n+3)------>(starting from bottom)
+n=0;3=from which tag it will apply
+tag:nth-child(odd)-----> selects odd element
+tag:nth-child(even)-----> selects even element
+tag;first-child-----> applies to first element
+tag:last-child------> applies to last element

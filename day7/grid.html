@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            display: grid;
+            height: 500px;
+            width: 250px;
+            background-color: rgb(247, 246, 246);
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
+            gap: 2px;
+        }
+
+        .box {
+            background-color: white;
+            color: rgb(236, 230, 230);
+            text-align: center;
+            align-content: center;
+
+
+        }
+
+        .box:nth-child(1),
+        .box:nth-child(4),
+        .box:nth-child(6),
+        .box:nth-child(7),
+        .box:nth-child(8),
+        .box:nth-child(9),
+        .box:nth-child(12),
+        .box:nth-child(16)
+         {
+            background-color: black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box">1</div>
+        <div class="box">1</div>
+        <div class="box">1</div>
+        <div class="box">1</div>
+        <div class="box">1</div>
+        <div class="box">1</div>
+        <div class="box">1</div>
+        <div class="box">1</div>
+        <div class="box">1</div>
+        <div class="box">1</div>
+        <div class="box">1</div>
+        <div class="box">1</div>
+        <div class="box">1</div>
+        <div class="box">1</div>
+        <div class="box">1</div>
+        
+
+
+    </div>
+</body>
+
+</html>
