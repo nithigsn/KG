@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border-radius: 50%;
+            border: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <button onclick="calc(1)">1</button>
+    <button onclick="calc(2)">2</button>
+    <button onclick="calc(3)">3</button><br>
+    <button onclick="calc(4)">4</button>
+    <button onclick="calc(5)">5</button>
+    <button onclick="calc(6)">6</button><br>
+    <button onclick="calc(7)">7</button>
+    <button onclick="calc(8)">8</button>
+    <button onclick="calc(9)">9</button><br>
+    <button onclick="calc(0)">0</button>
+    <button onclick="calc('+')">+</button>
+    <button onclick="calc('-')">-</button>
+    <br><button onclick="answer()">=</button>
+    <button onclick="resetData()">clear</button>
+    <p id="para"></p>
+
+
+
+
+
+
+
+  <script>
+    function main(){
+        alert("button clicked")
+    }
+    function calc(x) {
+    var ele = document.getElementById('para');
+    ele.innerText += x;
+}
+function answer() {
+    var ele = document.getElementById('para');
+    try {
+        ele.innerText = ele.innerText + '=' + eval(ele.innerText);
+    } catch (err) {
+        alert(err);
+        resetData();
+    }
+}
+function resetData() {
+    var ele = document.getElementById('para');
+    ele.innerText = "";
+}
+
+  </script>
+</body>
+</html>
